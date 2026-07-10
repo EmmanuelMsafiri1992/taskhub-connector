@@ -1,5 +1,6 @@
 {
     "name": "eisall/taskhub-connector",
+    "version": "1.0.0",
     "description": "Lets TaskHub manage this application through signed HTTP requests. Add-only: installing it changes no existing behaviour, removing it restores the app exactly.",
     "type": "library",
     "license": "proprietary",
