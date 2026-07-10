@@ -8,10 +8,21 @@ While `TASKHUB_SECRET` is unset the package registers nothing at all.
 
 ## Install
 
+From a sibling checkout (local/VPS with all apps in one parent dir):
+
 ```sh
-composer require eisall/taskhub-connector
+composer config repositories.taskhub-connector path ../taskhub-connector
+composer require eisall/taskhub-connector:^1.0
 php artisan vendor:publish --tag=taskhub-config
 ```
+
+Notes from the field:
+
+- Path repositories resolve as `dev-master` unless the package declares a
+  `version`, which this one does — keep it in step with tags.
+- If the provider comes up "not found" after install, the autoload dump
+  was interrupted (common with `optimize-autoloader` on Windows): run
+  `composer dump-autoload` again and let it finish.
 
 Then set the identity TaskHub generated when the app was registered:
 
