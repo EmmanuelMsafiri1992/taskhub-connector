@@ -1,0 +1,23 @@
+{
+    "name": "eisall/taskhub-connector",
+    "description": "Lets TaskHub manage this application through signed HTTP requests. Add-only: installing it changes no existing behaviour, removing it restores the app exactly.",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EISALL\\TaskHubConnector\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EISALL\\TaskHubConnector\\TaskHubConnectorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
