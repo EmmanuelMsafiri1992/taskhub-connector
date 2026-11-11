@@ -1,12 +1,12 @@
 {
     "name": "eisall/taskhub-connector",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Lets TaskHub manage this application through signed HTTP requests. Add-only: installing it changes no existing behaviour, removing it restores the app exactly.",
     "type": "library",
     "license": "proprietary",
     "require": {
         "php": "^8.0.2",
-        "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0"
     },
     "autoload": {
         "psr-4": {
